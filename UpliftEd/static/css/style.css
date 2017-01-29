@@ -1,0 +1,121 @@
+/* ------- lab 4 ------------- */
+h1 {color:sienna;}
+h2 {margin-left:5px;}
+hr { border:0px;height:1px;  background-color:red;   }
+body {
+background-image:url('../images/back.jpg');
+/* spiders in the background */
+}
+#container {
+background-color:white;
+opacity:0.7;
+}
+
+/* ------- lab 5 ------------- */
+.pstyle {
+font-size:12px;
+color:#2B2261;
+text-align:justify;
+}
+
+#highlight {
+  text-decoration: underline;
+  font-style:italic;
+  background-color:yellow;
+  color:red;
+}
+
+a#hogwarts:link {color:black;}
+a#hogwarts:visited {color:violet;}
+a#hogwarts:hover {color:green;}
+a#hogwarts:active {color:red;}
+
+li#master {
+ list-style-image:url('../images/wizard.jpg');
+}
+li#undergrad {
+ list-style-image:url('../images/witch.jpg');
+}
+/* ------------lab 6.1 Box Model -------------------- */
+
+table, td {
+   border: 1px dotted blue;
+   }
+
+table {
+border-collapse:collapse;
+}
+
+
+fieldset  {
+        width:80%;
+        border:1px;
+        border-style:dotted;
+	    border-color:blue;
+	    margin:auto;
+}
+
+label {display:block;}
+#yourname, #youremail, #yourneeds  {
+   width: 180px;
+   }
+
+
+
+p {margin-left: 20px;
+   margin-right: 20px;
+   }
+
+ul#qualifications {
+   margin-left: 30px;
+  }
+ #hobbies{
+   margin: auto;
+   width:75%;
+  }
+
+/* ----------- Homework - Simple Layout  ---------------- */
+
+#container {
+  width:800px;   
+  height:950px;
+  margin:auto;
+}
+
+#header {
+      width:490px;
+      height:100px;
+      float:left;
+}
+#harry {
+     width:80px; 
+     height:auto;
+     float:left;
+     margin: 5px;
+}
+#main {
+    width:490px;
+    height:auto;
+    float:left;
+}
+#right-sidebar {
+    width:240px;
+    height:auto;
+    float:right;
+}
+
+/* Include the following at the end - delete later 
+ 
+#header {background-color:blue; }
+#main {background-color:green; }
+#right-sidebar {background-color:red;}
+ 
+ Delete above before submission */
+  
+
+
+	  #wand {float:right;}
+  	  #wand {position: relative;top:30px;right:50px;}
+  
+/*      #wand {position: absolute;top:50px;right:55px;}
+/* 		  #wand {position: fixed;top:30px;right:5px;}  	 

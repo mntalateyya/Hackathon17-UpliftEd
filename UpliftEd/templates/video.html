@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<meta charset= "UTF-8" />
+		<title> Educaional Website </title>
+		<!-- Stylesheets -->
+		{% load static %}
+	<link rel="stylesheet" 
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="{% static 'css/col.css' %}" media="all">
+	<link rel="stylesheet" href="{% static 'css/2cols.css' %}" media="all">
+	<link rel="stylesheet" href="{% static 'css/3cols.css' %}" media="all">
+	<link rel="stylesheet" href="{% static 'css/4cols.css' %}" media="all">
+	<link rel="stylesheet" href="{% static 'css/5cols.css' %}" media="all">
+	<link rel="stylesheet" href="{% static 'css/6cols.css' %}" media="all">
+	<link rel="stylesheet" href="{% static 'css/7cols.css' %}" media="all">
+	<link rel="stylesheet" href="{% static 'css/8cols.css' %}" media="all">
+	<link rel="stylesheet" href="{% static 'css/9cols.css' %}" media="all">
+	<link rel="stylesheet" href="{% static 'css/10cols.css' %}" media="all">
+	<link rel="stylesheet" href="{% static 'css/11cols.css' %}" media="all">
+	<link rel="stylesheet" href="{% static 'css/12cols.css' %}" media="all">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}" />
+		<link rel="stylesheet" type="text/css"
+			href="{% static 'css/video.css'%}" />
+
+		
+	</head>
+	<body>
+		<header>
+			<div id="title" class="span_1_of_7">
+				UpliftEd
+			</div>
+			<div id="search" class="search-container span_3_of_7">
+				<input class="search-bar" placeholder="Search" title="Search"> </input>
+				<img id="search_img" src="./img/search.png"> </img>
+			</div>
+			<div class="upload-container">
+				<a id="upload-button" href="#" class="button">
+				<span class="icon"><i class="fa fa-upload"></i></span> Upload </a>
+			</div>
+			<a id="viewprofile" href="#" class="view"> My Profile </a>
+		</header>
+		<div class="main span_1_of_1">
+			<div class="main-video col span_3_of_6">
+				<div class='video-content'>
+					<iframe width="100%" height="480" 
+					src="{{video.link}}" 
+					frameborder="0" allowfullscreen></iframe>
+					<div class="video-description">
+						<h1 class="video-title-container">{{video.video_name}}</h1>
+						<div class="vote-container">	
+							<span id="votes_number" class="votes">{{video.video_votes}}</span>
+							<div style="display:inline-block">
+								<div class="arrow-up"></div>
+								<div class="arrow-down"></div>
+							</div>
+						</div>
+						<div class="video-description-text">
+							<span id="vid_desc" class="description">
+								{{video.video_discription}}
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="nav col span_1_2">
+					<a id="next_video" href="#prev" class="nav button">
+						<span class="icon"><i class="fa fa-arrow-circle-right"></i> Next </span>
+					</a>
+					<a id="prev_video" href="#prev" class="nav button">
+						<span class="icon"><i class="fa fa-arrow-circle-left"></i> Previous </span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

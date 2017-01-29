@@ -1,0 +1,50 @@
+<html>
+	<head>
+    <meta charset= "UTF-8" />
+    <title> Educaional Website </title>
+	<!-- Stylesheets -->
+	{% load static %}
+	<link rel="stylesheet" 
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="{% static 'css/col.css' %}" media="all">
+	<link rel="stylesheet" href="{% static 'css/2cols.css' %}" media="all">
+	<link rel="stylesheet" href="{% static 'css/3cols.css' %}" media="all">
+	<link rel="stylesheet" href="{% static 'css/4cols.css' %}" media="all">
+	<link rel="stylesheet" href="{% static 'css/5cols.css' %}" media="all">
+	<link rel="stylesheet" href="{% static 'css/6cols.css' %}" media="all">
+	<link rel="stylesheet" href="{% static 'css/7cols.css' %}" media="all">
+	<link rel="stylesheet" href="{% static 'css/8cols.css' %}" media="all">
+	<link rel="stylesheet" href="{% static 'css/9cols.css' %}" media="all">
+	<link rel="stylesheet" href="{% static 'css/10cols.css' %}" media="all">
+	<link rel="stylesheet" href="{% static 'css/11cols.css' %}" media="all">
+	<link rel="stylesheet" href="{% static 'css/12cols.css' %}" media="all">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}" />
+	
+  </head>
+  <body>
+	<header>
+		<div id="title" class="span_1_of_10">
+			UpliftEd
+		</div>
+		<div id="search" class="search-container span_3_of_7">
+			<input class="search-bar" placeholder="Search" title="Search"> </input>
+			<span class="search_icon"> 
+			<img id="search_img" src="./img/search.png"> </img>
+			</span>
+		</div>
+		<div class="upload-container">
+			<a id="upload-button" href="#" class="button">
+			<span class="icon"><i class="fa fa-upload"></i></span> Upload </a>
+		</div>
+		<a id="viewprofile" href="#" class="view"> My Profile </a>
+	</header>
+	<div>
+	<div class = "col span_1_of_4"></div>
+	<div class = "col span_2_of_4" style="background-color:#ffffff;"  >
+
+	<a href="playlist/1">Physics Mechanics</a>
+	<a href="/">Physics Electricity and Magnetism</a>
+	<a href="/">Optics</a>
+	</div>
+	<div class = "col span_1_of_4"></div>
+	</div>
